@@ -1,5 +1,5 @@
 import random
-import art
+
 print("""Welcome to the Number Guessing Game!
 I'm thinking of a number between 1 and 100.""")
 the_num = random.randint(1, 100)
@@ -9,7 +9,7 @@ if dif == "easy":
     level = 10
 elif dif == "hard":
     level = 5
-print(art.logo)
+
 while level !=0:
     
     print(f"You have {level} attempts remaining to guess the number.")
