@@ -17,4 +17,6 @@ data_dict = {
 
 df =pd.DataFrame(data_dict)
 
-df.to_csv("squirrel_count.csv")
+
+
+df.to_csv("squirrel_count.csv")#change the code
