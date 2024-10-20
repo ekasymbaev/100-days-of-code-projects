@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 
+CLIENT_ID="097cbfa7b6764178a830adc706c5a1e8"
+CLIENT_SECRET="85fb0af15b1744dd83cd08a375e24343"
+
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
 header  = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"
