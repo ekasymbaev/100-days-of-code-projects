@@ -9,11 +9,11 @@ driver = webdriver.Chrome(options = chrome_options)
 
 driver.get("https://orteil.dashnet.org/experiments/cookie/")
 
-#Get cookie to click on.
+
 cookie = driver.find_element(by=By.ID, value = "cookie")
 
 
-#Get upgrade item ids.
+
 items = driver.find_elements(by=By.CSS_SELECTOR, value="#store div")
 item_ids = [item.get_attribute("id") for item in items]
 
@@ -23,7 +23,7 @@ five_min = time.time() + 60*5
 while True:
     cookie.click()
 
-    #Every 5 seconds:
+    
     if time.time() > timeout:
 
         #Get upgrade <b> tags
